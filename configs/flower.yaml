@@ -1,0 +1,18 @@
+dataset:
+  path: '\data\flower'
+  batch_size: 2
+  num_workers: 8
+  num_classes: 5
+
+train:
+  folder: 'logs'
+  n_epochs: 3 # n_epochs = 40
+  lr: 0.0002
+  # -------------------
+  verbose: True
+  verbose_step: 1
+  # -------------------
+
+  # --------------------
+  step_scheduler: False  # do scheduler.step after optimizer.step
+  validation_scheduler: True  # do scheduler.step after validation stage loss
